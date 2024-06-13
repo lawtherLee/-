@@ -1,0 +1,65 @@
+{
+  "id": "4582717",
+  "name": "监控项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4813175",
+      "name": "主机入侵防御",
+      "font_class": "zhujiruqinfangyu",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "34101151",
+      "name": "数据质量-light-copy",
+      "font_class": "shujuzhiliang-light",
+      "unicode": "e7ca",
+      "unicode_decimal": 59338
+    },
+    {
+      "icon_id": "39822564",
+      "name": "分析统计",
+      "font_class": "analysis",
+      "unicode": "e860",
+      "unicode_decimal": 59488
+    },
+    {
+      "icon_id": "39822572",
+      "name": "云网络",
+      "font_class": "a-cloudnetwork",
+      "unicode": "e862",
+      "unicode_decimal": 59490
+    },
+    {
+      "icon_id": "39822579",
+      "name": "部署",
+      "font_class": "Deployment",
+      "unicode": "e865",
+      "unicode_decimal": 59493
+    },
+    {
+      "icon_id": "39822582",
+      "name": "灵活的",
+      "font_class": "Flexible",
+      "unicode": "e866",
+      "unicode_decimal": 59494
+    },
+    {
+      "icon_id": "39822595",
+      "name": "路由器",
+      "font_class": "router",
+      "unicode": "e868",
+      "unicode_decimal": 59496
+    },
+    {
+      "icon_id": "39822599",
+      "name": "ssd磁盘空间",
+      "font_class": "a-ssddiskspace",
+      "unicode": "e869",
+      "unicode_decimal": 59497
+    }
+  ]
+}
