@@ -23,14 +23,14 @@ const data = {
   value: [10, 12, 8, 25, 14, 28, 50, 24],
 };
 
-let dataZoomMove = {
+let dataZoomMove: { start: number; end: number } = {
   start: 0,
   end: 5,
 };
-let dataZoomMoveTimer = null;
+let dataZoomMoveTimer: number | null = null;
 
 const startMoveDataZoom = () => {
-  dataZoomMoveTimer = setInterval(() => {
+  dataZoomMoveTimer = window.setInterval(() => {
     dataZoomMove.start += 1;
     dataZoomMove.end += 1;
     if (dataZoomMove.end > data.value.length - 1) {
@@ -206,13 +206,13 @@ onMounted(() => {
   chartDom.addEventListener("mouseout", () => {
     if (dataZoomMoveTimer) return;
     let dataZoomMove_get = myChart!.getOption().dataZoom![0];
-    dataZoomMove.start = dataZoomMove_get.startValue;
-    dataZoomMove.end = dataZoomMove_get.endValue;
+    dataZoomMove.start = <number>dataZoomMove_get.startValue;
+    dataZoomMove.end = <number>dataZoomMove_get.endValue;
     startMoveDataZoom();
   });
   chartDom.addEventListener("mouseover", () => {
-    clearInterval(dataZoomMoveTimer);
-    dataZoomMoveTimer = undefined;
+    window.clearInterval(dataZoomMoveTimer as number);
+    dataZoomMoveTimer = null;
   });
 });
 
