@@ -1,6 +1,6 @@
 <template>
   <div class="border-box" :style="{ width, height }">
-    <h3>{{ title }}</h3>
+    <h3 class="title-box">{{ title }}</h3>
 
     <!--    <BorderBox11-->
     <!--      :color="['#22f8f8', '#2266f8']"-->
@@ -20,7 +20,7 @@ const props = defineProps<{
   height: string;
 }>();
 
-const width = props.width || "420px";
+const width = props.width || "440px";
 const height = props.height || "270px";
 </script>
 
@@ -36,6 +36,7 @@ const height = props.height || "270px";
 );
 
 .border-box {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -77,10 +78,12 @@ const height = props.height || "270px";
   filter: brightness(1.5);
 }
 
-//::slotted(*) {
-//  margin: 0;
-//  padding: 0;
-//  max-width: 100%;
-//  max-height: 100%;
-//}
+.title-box {
+  clip-path: @path;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #2156cc, #16dcee, #2156cc) 1;
+  background: radial-gradient(ellipse at center, #313165, #2d86e1, #313165);
+}
 </style>

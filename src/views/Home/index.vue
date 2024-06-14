@@ -104,7 +104,7 @@ p {
   text-align: left;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   color: @text-color;
 
   h2 {

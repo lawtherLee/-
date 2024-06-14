@@ -12,7 +12,7 @@
         <RoundColumnar />
       </div>
       <div class="content-middle">
-        <Columnar width="1840px" />
+        <Columnar width="1860px" />
       </div>
       <div class="content-bottom">
         <Radar />
